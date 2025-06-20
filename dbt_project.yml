@@ -37,15 +37,16 @@ vars:
 # using the `{{ config(...) }}` macro.
 
 models:
+  +schema: "" 
   public_data:  
-    staging:
-      +materialized: table
-      +schema: staging
-    intermediate:
-      +materialized: table
-      +schema: intermediate
     analytics:
       +materialized: table
       +schema: analytics
+    intermediate:
+      +materialized: table
+      +schema: intermediate
+    staging:
+      +materialized: table
+      +schema: staging
     dbt_tsabin:
       +materialized: table
