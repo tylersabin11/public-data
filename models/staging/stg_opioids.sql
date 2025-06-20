@@ -1,5 +1,5 @@
 select
-    concat(Plan_Type, Tot_Opioid_Clms) as opioid_id,
+    concat(Plan_Type, Geo_Cd, Tot_Clms) as opioid_id,
     Year as year,
     Geo_Lvl as geo_level,
     Geo_Cd as geo_code,
