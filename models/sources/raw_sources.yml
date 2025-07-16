@@ -7,3 +7,15 @@ sources:
       - name: raw_opioids
         description: > 
           Raw opioid prescribing data loaded via CMS API pipeline
+      - name: test_1542969243754
+        description: >
+          Provider information
+      - name: train_1542865627584
+        description: >
+          Provider information with potential fraud
+      - name: test_beneficiarydata_1542969243754
+        description: >
+          Beneficiary information
+      - name: train_beneficiarydata_1542865627584
+        description: >
+          Beneficiary information
