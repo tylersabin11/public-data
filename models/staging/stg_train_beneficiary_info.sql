@@ -23,6 +23,6 @@ select
     ChronicCond_stroke as chronic_cond_stroke,
     IPAnnualReimbursementAmt as ip_annual_reimbursement_amount,
     IPAnnualDeductibleAmt as ip_annual_deductible_amount,
-    OPAnnualReimbusementAmt as op_annual_reimbursement_amount,
+    OPAnnualReimbursementAmt as op_annual_reimbursement_amount,
     OPAnnualDeductibleAmt as op_annual_deductible_amount,
 from {{ source('my_datasets', 'train_beneficiarydata_1542865627584')}}
