@@ -19,3 +19,9 @@ sources:
       - name: train_beneficiarydata_1542865627584
         description: >
           Beneficiary information
+      - name: test_inpatientdata_1542969243754
+        description: >
+          Inpatient data
+      - name: train_inpatientdata_1542865627584
+        description: >
+          Inpatient data
