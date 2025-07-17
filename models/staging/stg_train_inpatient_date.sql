@@ -6,7 +6,7 @@ select
     Provider as provider,
     InscClaimAmtReimbursed as claim_amount_reimbursed,
     AttendingPhysician as attending_physician,
-    OperatingPhysicia as operating_physician,
+    OperatingPhysician as operating_physician,
     OtherPhysician as other_physician,
     date(AdmissionDt) as admission_date,
     ClmAdmitDiagnosisCode as claim_admit_diagnosis_code,
