@@ -29,4 +29,4 @@ select
     ClmProcedureCode_4 as claim_procedure_code_4,
     ClmProcedureCode_5 as claim_procedure_code_5,
     ClmProcedureCode_6 as claim_procedure_code_6
-from {{ source('my_datasets','test_inpatientdata_1542969243754')}}
+from {{ source('my_datasets','train_inpatientdata_1542865627584')}}

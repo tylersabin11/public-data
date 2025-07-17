@@ -25,3 +25,9 @@ sources:
       - name: train_inpatientdata_1542865627584
         description: >
           Inpatient data
+      - name: test_outpatientdata_1542969243754
+        description: >
+          Outpatient data
+      - name: train_outpatientdata_1542865627584
+        description: >
+          Outpatient data

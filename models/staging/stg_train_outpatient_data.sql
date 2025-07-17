@@ -8,11 +8,6 @@ select
     AttendingPhysician as attending_physician,
     OperatingPhysician as operating_physician,
     OtherPhysician as other_physician,
-    date(AdmissionDt) as admission_date,
-    ClmAdmitDiagnosisCode as claim_admit_diagnosis_code,
-    DeductibleAmtPaid as deductible_amount_paid,
-    date(DischargeDt) as discharge_date,
-    DiagnosisGroupCode as diagnosis_group_code,
     ClmDiagnosisCode_1 as claim_diagnosis_code_1,
     ClmDiagnosisCode_2 as claim_diagnosis_code_2,
     ClmDiagnosisCode_3 as claim_diagnosis_code_3,
@@ -29,4 +24,6 @@ select
     ClmProcedureCode_4 as claim_procedure_code_4,
     ClmProcedureCode_5 as claim_procedure_code_5,
     ClmProcedureCode_6 as claim_procedure_code_6,
-from {{ source('my_datasets','train_inpatientdata_1542865627584')}}
+    DeductibleAmtPaid as deductible_amount_paid,
+    ClmAdmitDiagnosisCode as claim_admit_diagnosis_code
+from {{ source('my_datasets','train_outpatientdata_1542865627584')}}
