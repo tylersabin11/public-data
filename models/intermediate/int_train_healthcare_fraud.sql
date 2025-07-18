@@ -22,7 +22,7 @@ with beneficiary_data as (
     ip_annual_deductible_amount,
     op_annual_reimbursement_amount,
     op_annual_deductible_amount
-  from {{ ref('staging.stg_train_beneficiary_info') }}
+  from {{ ref('stg_train_beneficiary_info') }}
 ),
 inpatient_data as (
   select
@@ -57,7 +57,7 @@ inpatient_data as (
     claim_procedure_code_5 as ip_claim_procedure_code_5,
     claim_procedure_code_6 as ip_claim_procedure_code_6,
     row_number() over(partition by beneficiary_id order by claim_start_date desc) as ip_first_claim
-  from {{ ref('staging.stg_train_inpatient_data') }}
+  from {{ ref('stg_train_inpatient_data') }}
 ),
 outpatient_data as (
   select 
@@ -95,7 +95,7 @@ provider_info as (
   select
     provider,
     potential_fraud
-  from {{ ref('staging.stg_train_provider_info') }}
+  from {{ ref('stg_train_provider_info') }}
 )
 
 
