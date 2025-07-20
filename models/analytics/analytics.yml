@@ -1,9 +1,0 @@
-version: 2
-
-models:
-    - name: opioid_crisis
-      columns:
-        - name: opioid_id
-          tests:
-            - not_null
-            - unique
