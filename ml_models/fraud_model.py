@@ -39,3 +39,5 @@ X_test = test_df.drop(columns=["potential_fraud"])
 
 y_train = train_df["potential_fraud"]
 y_test = test_df["potential_fraud"]
+
+#Model training to take place below
